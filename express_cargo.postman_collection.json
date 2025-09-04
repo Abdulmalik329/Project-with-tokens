@@ -1,0 +1,587 @@
+{
+	"info": {
+		"_postman_id": "3db7447d-397a-4392-8f8a-07f41b659c5d",
+		"name": "express_cargo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46840745",
+		"_collection_link": "https://sarvarbeksodiqov.postman.co/workspace/Sarvarbek-Sodiqov's-Workspace~717092cf-1161-43cc-8ae2-ac24959f08ac/collection/46840745-3db7447d-397a-4392-8f8a-07f41b659c5d?action=share&source=collection_link&creator=46840745"
+	},
+	"item": [
+		{
+			"name": "Client",
+			"item": [
+				{
+					"name": "addClient",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"full_name\": \"Sarvarbek Sodiqov\",\r\n    \"phone_number\": \"998900877780\",\r\n    \"email\": \"coolsarvar2007@gmail.com\",\r\n    \"address\": \"Toshkent\",\r\n    \"location\": \"13245,13245\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/client",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"client"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateClient",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"full_name\": \"Botir Qodirov\",\r\n    \"phone_number\": \"9846148\",\r\n    \"email\": \"botirwa1@mail.uz\",\r\n    \"address\": \"Toshkent\",\r\n    \"location\": \"13245,13245\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/client/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"client",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllClients",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"full_name\": \"Botir Qodirov\",\r\n    \"phone_number\": \"1234567\",\r\n    \"email\": \"botir1@mail.uz\",\r\n    \"address\": \"Toshkent\",\r\n    \"location\": \"13245,13245\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/client",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"client"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getClientById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"full_name\": \"Botir Qodirov\",\r\n    \"phone_number\": \"1234567\",\r\n    \"email\": \"botir1@mail.uz\",\r\n    \"address\": \"Toshkent\",\r\n    \"location\": \"13245,13245\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/client/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"client",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteClient",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"full_name\": \"Botir Qodirov\",\r\n    \"phone_number\": \"1234567\",\r\n    \"email\": \"botir1@mail.uz\",\r\n    \"address\": \"Toshkent\",\r\n    \"location\": \"13245,13245\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/client/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"client",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "currency_types",
+			"item": [
+				{
+					"name": "addType",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"$\",\r\n    \"description\": \"dollar\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/currency_type",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"currency_type"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllTypes",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"full_name\": \"Sarvarbek Sodiqov\",\r\n    \"phone_number\": \"998900877780\",\r\n    \"email\": \"coolsarvar2007@gmail.com\",\r\n    \"address\": \"Toshkent\",\r\n    \"location\": \"13245,13245\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/currency_type",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"currency_type"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getTypeById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"full_name\": \"Sarvarbek Sodiqov\",\r\n    \"phone_number\": \"998900877780\",\r\n    \"email\": \"coolsarvar2007@gmail.com\",\r\n    \"address\": \"Toshkent\",\r\n    \"location\": \"13245,13245\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/currency_type/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"currency_type",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateTypes",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"UZS\",\r\n    \"description\": \"so'm\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/currency_type/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"currency_type",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"UZS\",\r\n    \"description\": \"so'm\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/currency_type/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"currency_type",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "status",
+			"item": [
+				{
+					"name": "addStatus",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"ikki\",\r\n    \"description\": \"yetkazish jarayonida\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/status",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllStatus",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"ikki\",\r\n    \"description\": \"yetkazish jarayonida\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/status",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getStatusById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"ikki\",\r\n    \"description\": \"yetkazish jarayonida\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/status/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"status",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateStatus",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"bir\",\r\n    \"description\": \"tugallangan\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/status/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"status",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteStatus",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"bir\",\r\n    \"description\": \"tugallangan\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/status/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"status",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "getAllAdmins",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"ikki\",\r\n    \"description\": \"yetkazish jarayonida\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/admin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAdminById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"ikki\",\r\n    \"description\": \"yetkazish jarayonida\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/admin/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"admin",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createAdmin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"full_name\": \"Sarvarbek Sodiqov\",\r\n    \"user_name\": \"Sodikov_SMD\",\r\n    \"password\": \"07042007\",\r\n    \"phone_number\": \"998900877780\",\r\n    \"email\": \"coolsarvar2007@gmail.com\",\r\n    \"tg_link\": \"https://t.me/SarvarbekSodikov\",\r\n    \"token\": \"2$654894Sda984sa684.wad85a1w8d6aw84d.aw85dawd065aw\",\r\n    \"is_creator\": \"true\",\r\n    \"is_active\": \"true\",\r\n    \"discription\": \"Eng zor admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/admin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateAdmin",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"full_name\": \"Sarvarbek Sodiqov\",\r\n    \"user_name\": \"Sodikov_SMD\",\r\n    \"password\": \"07042007\",\r\n    \"phone_number\": \"998900877780\",\r\n    \"email\": \"coolsarvar2007@gmail.com\",\r\n    \"tg_link\": \"https://t.me/SarvarbekSodikov\",\r\n    \"token\": \"2$654894Sda984sa684.wad85a1w8d6aw84d.aw85dawd065aw\",\r\n    \"is_creator\": \"true\",\r\n    \"is_active\": \"true\",\r\n    \"discription\": \"Eng zor admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/admin/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"admin",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteAdmin",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"full_name\": \"Sarvarbek Sodiqov\",\r\n    \"user_name\": \"Sodikov_SMD\",\r\n    \"password\": \"07042007\",\r\n    \"phone_number\": \"998900877780\",\r\n    \"email\": \"coolsarvar2007@gmail.com\",\r\n    \"tg_link\": \"https://t.me/SarvarbekSodikov\",\r\n    \"token\": \"2$654894Sda984sa684.wad85a1w8d6aw84d.aw85dawd065aw\",\r\n    \"is_creator\": \"true\",\r\n    \"is_active\": \"true\",\r\n    \"discription\": \"Eng zor admin\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/admin/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"admin",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
