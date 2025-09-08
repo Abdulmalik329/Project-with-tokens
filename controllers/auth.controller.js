@@ -4,6 +4,22 @@ const bcrypt = require("bcrypt");
 const jwtService = require("../services/jwt.service");
 
 const login = async (req, res) => {
+  //UnkanughtExtpation
+
+  try {
+    setTimeout(function () {
+      throw new Error("UnkanughtExtpation");
+    }, 1000);
+  } catch (error) {
+    console.log(error);
+  }
+
+  //unhandledRejection
+
+  new Promise((_, reject) => {
+    reject(new Error("unhandledRejection example"));
+  });
+
   try {
     const { email, password } = req.body;
     const admin = await Admin.findOne({ where: { email } });

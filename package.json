@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node --watch app"
+    "dev": "cross-env NODE_ENV=development secret=qweret node --watch app",
+    "prod": "cross-env NODE_ENV=production prod_secret=12345678 node --watch app"
+
   },
   "keywords": [],
   "author": "",
@@ -14,6 +15,8 @@
     "bcrypt": "^6.0.0",
     "config": "^4.1.1",
     "cookie-parser": "^1.4.7",
+    "cross-env": "^10.0.0",
+    "dotenv": "^17.2.2",
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
     "pg": "^8.16.3",
