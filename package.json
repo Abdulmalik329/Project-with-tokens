@@ -5,7 +5,6 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development secret=qweret node --watch app",
     "prod": "cross-env NODE_ENV=production prod_secret=12345678 node --watch app"
-
   },
   "keywords": [],
   "author": "",
@@ -19,7 +18,10 @@
     "dotenv": "^17.2.2",
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.19.0",
     "pg": "^8.16.3",
-    "sequelize": "^6.37.7"
+    "sequelize": "^6.37.7",
+    "winston": "^3.17.0",
+    "winston-mongodb": "^7.0.1"
   }
 }
