@@ -1,5 +1,5 @@
 const { User } = require("../models/user");
-const { sendErrorResponse } = require("../helpers/send.response.errors");
+const { sendErrorResponse } = require("../helpers/send.error.response");
 const bcrypt = require("bcrypt");
 
 const addUser = async (req, res) => {
